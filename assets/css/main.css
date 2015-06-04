@@ -1,0 +1,383 @@
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700);
+
+h1,h2, h3 {
+	font-family: "Source Serif Pro", serif;
+	font-weight: 700;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+	font-family: "Arimo", sans-serif;
+	background-color: #184434;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	min-width: 100%;
+	min-height: 100%;
+	height: 100%;
+	margin: 0 auto -55px;
+}
+
+
+a {
+	text-decoration: none;
+	color: #3cbc72;
+}
+
+.logo {
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+	display: block;
+}
+
+.logo img {
+	top: 0;
+	position: fixed;
+	width: 90px;
+}
+
+nav {
+     position: fixed;
+     z-index: 1000;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     width: 200px;
+     background-color: #222;
+     transform: translate3d(-200px, 0, 0);
+     transition: transform 0.4s ease;
+}
+.active-nav nav {
+     transform: translate3d(0, 0, 0);
+}
+nav ul {
+   	list-style: none;
+    margin-top: 100px;
+}
+nav ul li a {
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none;
+	display: block;
+	width: 200px;
+	color: #fff;
+	margin: 40px 0;
+}
+
+nav ul li a:hover {
+	color: #3cbc72;
+}
+            
+.nav-toggle-btn {
+	top: 0;
+    margin: 20px;
+    display: block;
+    position: absolute;
+    left: 180px;
+    width: 40px;
+    height: 40px;
+            }
+            
+.content {
+    height: auto;
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+.active-nav .content {
+    transform: translate3d(200px, 0, 0);
+}
+
+.menu {
+	margin: 20px;
+}
+
+.lnr-menu {
+	margin-top: 20px;
+	margin-left: 20px;
+	color: #fff;
+	font-size: 32px;
+	padding: 2px 4px;
+}
+
+.lnr-menu:hover {
+	color: #3cbc72;
+	cursor: pointer;
+	-webkit-transition: all 75ms;
+    -moz-transition: all 75ms;
+    -ms-transition: all 75ms;
+    -o-transition: all 75ms;
+    transition: all 75ms;
+}
+
+.brand {
+	text-align: center;
+	margin-top: 100px;
+	width: 100%;
+	height: 120px;
+}
+
+.brand img {
+	display: inline-block;
+	width: 304px;
+}
+
+.nav .links {
+	position: absolute;
+	right: 0;
+	left: 0;
+	font-size: 16px;
+}
+
+
+.links span:hover {
+	color: #3cbc72;
+	-webkit-transition: all 75ms;
+    -moz-transition: all 75ms;
+    -ms-transition: all 75ms;
+    -o-transition: all 75ms;
+    transition: all 75ms;
+}
+
+.jumbo {
+	margin-top: 200px;
+	text-align: center;
+	color: #fff;
+}
+
+.jumbo h2 {
+	font-size: 2.5em;
+}
+
+
+#about p {
+	font-size: 20px;
+}
+
+.jumbo-desc {
+	margin: 0 auto;
+	text-align: left;
+	max-width: 650px;
+}
+
+.about {
+	margin: 20px auto;
+	text-align: center;
+	max-width: 900px;
+	color: #fff;
+}
+
+.about p {
+	font-size: 16px;
+}
+
+.aboutlink {
+	margin-top: 40px;
+}
+
+.aboutlink a {
+	font-size: 20px;
+}
+
+.featured {
+	margin-top: 75px;
+}
+
+.featured-desc a {
+	border: 1px solid #3cbc72;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	margin: auto;
+	text-transform: uppercase;
+	font-size: 14px;
+
+}
+
+.skills .tab {
+    width: 16%;
+    display: inline-block;
+    height: 300px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.tab {
+	width: 280px;
+	height: 300px;
+	background: #fff;
+	padding: 20px;
+}
+
+.skill-icon {
+	margin-top: 50px;
+}
+
+.skill-desc {
+	margin-top: 50px;
+}
+
+.skill-desc p {
+	text-transform: none !important;
+	font-weight: normal !important;
+	color: #666 !important;
+}
+
+.service-info {
+	margin-top: 150px;
+}
+
+.tab p {
+	color: #3cbc72;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.tab .fa-code {
+	color: #3cbc72;
+	font-size: 42px;
+}
+
+.tab .fa-paint-brush {
+	color: #3cbc72;
+	font-size: 42px;
+}
+
+.tab .fa-heart {
+	color: #3cbc72;
+	font-size: 42px;
+}
+
+.link-btn {
+	margin: 0 auto;
+	width: 100px;
+	display: block;
+	padding: 9px 10px;
+	background:#3cbc72;
+}
+
+.link-btn a {
+	color: #fff;
+}
+
+.link-btn:hover {
+	background: #45c57b;
+}
+
+.push {
+	padding: 50px;
+    height: 155px;
+}
+
+.footer {
+	color: #fff;
+	text-align: center;
+	bottom: 0;
+}
+
+.social {
+	word-spacing: 20px;
+	font-size: 32px;
+}
+
+.fa-twitter,
+.fa-dribbble,
+.fa-github {
+	color: #fff;
+}
+
+.fa-twitter:hover {
+	color: #3cbc72;
+}
+
+.fa-dribbble:hover {
+	color: #3cbc72;
+}
+
+.fa-github:hover {
+	color: #3cbc72;
+}
+
+::selection {
+	background: #3cbc72;
+	color: #fff;
+}
+
+.featured-nav {
+	height: 60px;
+	min-width: 100%;
+}
+
+
+.fnav-links a {
+	width: 100px;
+	height: 32px;
+	line-height: 32px;
+	display: inline-block;
+	margin: auto 20px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.fnav-links a:hover {
+	background: #3cbc72;
+	color: #fff;
+	-webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    -ms-transition: all 100ms;
+    -o-transition: all 100ms;
+    transition: all 100ms;
+
+}
+
+.fnav-links a.active {
+	background: #3cbc72;
+	color: #fff;
+}
+
+
+form {
+	margin: 0 auto;
+	max-width: 650px;
+	height: 300px;
+}
+
+input {
+	color: #eee;
+	width: 300px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+}
+
+input, textarea {
+	background: #333;
+	border-style: none;
+	color: #eee;
+}
+
+
+form input[type=text] {
+	color: #eee;
+	font-family: "Arimo", sans-serif;
+}
+
+form input[type=submit] {
+	background: #3cbc72;
+	cursor: pointer;
+}
+
+form input[type=submit]:hover {
+	background: #40c377;
+	cursor: pointer;
+}
