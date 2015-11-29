@@ -1,3 +1,4 @@
 # Personal-Site
-This is the source code for my personal/business website <a href="http://madebyjordan.co.uk">madebyjordan.co.uk</a>
+Full description coming soon. This is the source for personal site which serves as my portfolio of my design / developer works. 
 
+Site link coming soon.
