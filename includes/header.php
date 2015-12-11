@@ -1,53 +1,51 @@
-﻿<!DOCTYPE html>
-<html lang="en_GB"
-<head>
-<meta charset="utf-8">
-<meta content="IE=edge,chrome=1" http-equiv=X-UA-Compatible>
-<link rel="shortcut icon" href="favicon.png">
-<meta name="description" content="My name is Jordan. I'm a freelance graphics designer but I have a love for all things web related.">
-<meta name=viewport content="width=device-width, initial-scale=1, minimal-ui">
-<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-<script src="js/modernizr.custom.js"></script>
-<title>Jordan • Designer &amp; Developer</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv=X-UA-Compatible>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hi, I'm Jordan. A designer &amp; developer from the UK.">
+    <title>Made by Jordan</title>
+    <link rel="canonical" href="#"/>
+    <meta property="og:site_name" content="Made by Jordan"/>
+    <meta property="og:url" content="#"/>
+    <meta property="og:type" content="website"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+    <link rel="stylesheet" href="static/styles/master.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="static/styles/normalize.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="static/styles/mobile.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="static/styles/flexboxgrid.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="static/styles/animate.css" media="screen" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://file.myfontastic.com/btYzNteK66bSboFzt9YVUR/icons.css" rel="stylesheet">
+
 </head>
 <body>
-<div class="wrapper">
- <nav>       
- 	<div class="logo">
- 		<img src="images/mylogo.png" alt="">
- 		</div>
-    <a href="#" class="nav-toggle-btn">
-    	<span class="lnr lnr-menu"></span>
-    </a>
-            
-        <ul>
-            <li><a href="index">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="work">Work</a></li>
-            <li><a href="services">Services</a></li>
-            <li><a href="contact">Contact</a></li>
-        </ul>
-            
-</nav>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript">
-        
-        (function() {
-            
-            var bodyEl = $('body'),
-                navToggleBtn = bodyEl.find('.nav-toggle-btn');
-            
-            navToggleBtn.on('click', function(e) {
-                bodyEl.toggleClass('active-nav');
-                e.preventDefault();
-            });
-            
-            
-            
-        })();
-        
-        
-</script>
 
+  <div id="sidebar">
+    <a class="icon-branding" href="index.php"></a>
+
+		<ul>
+			<li><a class="icon-home" href="index.php"><br>Home</a></li>
+			<li><a class="icon-user" href="about.php"><br>About</a></li>
+      <li><a class="icon-brush" href="work.php"><br>Work</a></li>
+      <li><a class="icon-book-open" href="blog.php"><br>Blog</a></li>
+      <li><a class="icon-mail" href="contact.php"><br>Contact</a></li>
+		</ul>
+
+		<div class="icon-menu">
+		</div>
+
+	</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+		$('.icon-menu').click(function(){
+			$('#sidebar').toggleClass('visible');
+		});
+	});
+
+	</script>
